@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatePostViewController" customModule="MiniSocMed" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="UoU-J8-m5z" id="mM7-cr-Hmr"/>
+                <outlet property="scrollView" destination="dEz-xh-xm1" id="iTt-Qg-qbf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YId-FF-7n1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEz-xh-xm1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoU-J8-m5z">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UoU-J8-m5z" secondAttribute="bottom" id="2sK-8F-t36"/>
+                        <constraint firstItem="UoU-J8-m5z" firstAttribute="leading" secondItem="dEz-xh-xm1" secondAttribute="leading" id="MOZ-ry-pCF"/>
+                        <constraint firstAttribute="trailing" secondItem="UoU-J8-m5z" secondAttribute="trailing" id="qCZ-4G-qNw"/>
+                        <constraint firstItem="UoU-J8-m5z" firstAttribute="top" secondItem="dEz-xh-xm1" secondAttribute="top" id="zoD-MJ-jgc"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="4QQ-v1-BnB"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="bF7-aO-VwT"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dEz-xh-xm1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EbC-s1-KY1"/>
+                <constraint firstItem="UoU-J8-m5z" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="I9Y-Rb-SxR"/>
+                <constraint firstItem="dEz-xh-xm1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oz9-fO-T8N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dEz-xh-xm1" secondAttribute="trailing" id="uj5-N4-rpJ"/>
+                <constraint firstAttribute="bottom" secondItem="dEz-xh-xm1" secondAttribute="bottom" id="x6I-Me-v24"/>
+                <constraint firstItem="UoU-J8-m5z" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" priority="250" id="xf5-6T-5Q7"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
